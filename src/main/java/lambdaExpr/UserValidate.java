@@ -1,5 +1,6 @@
 package lambdaExpr;
 
-public interface UserValidate {
-
+@FunctionalInterface
+public interface UserValidate<T> {
+    boolean validate(T param);
 }
